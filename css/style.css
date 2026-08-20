@@ -17,13 +17,29 @@ html, body {
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #1a0630;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#2b0a4d), to(#12031f));
-  background-image: -webkit-linear-gradient(top, #2b0a4d, #12031f);
-  background-image: linear-gradient(to bottom, #2b0a4d, #12031f);
+  background-color: #150429;
   color: #ffffff;
   overflow-x: hidden;
   min-height: 100%;
+}
+
+/* fondo fijo con el logo G-Latto tono sobre tono.
+   Se usa un div con position:fixed en vez de background-attachment:fixed
+   porque ese ultimo tiene bugs conocidos en Safari de iOS viejo. */
+.bg-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #150429;
+  background-image: url('../assets/g-latto-bg.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  z-index: -1;
 }
 
 /* evita seleccionar texto sin querer al tocar rapido en la tablet */
