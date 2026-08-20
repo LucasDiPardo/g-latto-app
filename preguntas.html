@@ -31,13 +31,18 @@
   <div class="options-area">
     <div class="options-header">
       <span>Banco de preguntas</span>
-      <button class="btn-small" id="resetBtn">Restaurar</button>
+      <button class="btn-small" id="toggleListBtn">Ver / editar &#9662;</button>
     </div>
 
-    <ul class="options-list" id="bankList"></ul>
+    <div class="options-body hidden" id="optionsBody">
+      <div class="options-body-actions">
+        <button class="btn-small" id="resetBtn">Restaurar</button>
+      </div>
 
-    <button class="btn btn-secondary full-btn" id="addQuestionBtn">+ Agregar pregunta</button>
+      <ul class="options-list" id="bankList"></ul>
 
+      <button class="btn btn-secondary full-btn" id="addQuestionBtn">+ Agregar pregunta</button>
+    </div>
   </div>
 
 </div>

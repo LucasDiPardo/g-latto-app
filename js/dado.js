@@ -26,6 +26,8 @@
   var rollBtn = document.getElementById('rollBtn');
   var diceRule = document.getElementById('diceRule');
   var rulesList = document.getElementById('rulesList');
+  var toggleListBtn = document.getElementById('toggleListBtn');
+  var optionsBody = document.getElementById('optionsBody');
 
   var editOverlay = document.getElementById('editOverlay');
   var editRuleText = document.getElementById('editRuleText');
@@ -188,6 +190,17 @@
     rollBtn.addEventListener('click', onRollClick);
     cancelEditBtn.addEventListener('click', closeEditForm);
     saveEditBtn.addEventListener('click', onSaveEdit);
+
+    toggleListBtn.addEventListener('click', function () {
+      var isHidden = optionsBody.className.indexOf('hidden') !== -1;
+      if (isHidden) {
+        optionsBody.className = 'options-body';
+        toggleListBtn.innerHTML = 'Ocultar &#9652;';
+      } else {
+        optionsBody.className = 'options-body hidden';
+        toggleListBtn.innerHTML = 'Ver / editar &#9662;';
+      }
+    });
   }
 
   init();

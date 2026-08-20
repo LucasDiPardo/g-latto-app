@@ -139,6 +139,24 @@
   var addRetoBtn = document.getElementById('addRetoBtn');
   var resetRetoBtn = document.getElementById('resetRetoBtn');
 
+  var toggleVerdadBtn = document.getElementById('toggleVerdadBtn');
+  var verdadBody = document.getElementById('verdadBody');
+  var toggleRetoBtn = document.getElementById('toggleRetoBtn');
+  var retoBody = document.getElementById('retoBody');
+
+  function wireToggle(btn, body) {
+    btn.addEventListener('click', function () {
+      var isHidden = body.className.indexOf('hidden') !== -1;
+      if (isHidden) {
+        body.className = 'options-body';
+        btn.innerHTML = 'Ocultar &#9652;';
+      } else {
+        body.className = 'options-body hidden';
+        btn.innerHTML = 'Ver / editar &#9662;';
+      }
+    });
+  }
+
   function trim(s) {
     return s.replace(/^\s+|\s+$/g, '');
   }
@@ -250,6 +268,9 @@
     newRetoInput.addEventListener('keydown', function (e) {
       if (e.keyCode === 13) { addRetoBtn.click(); }
     });
+
+    wireToggle(toggleVerdadBtn, verdadBody);
+    wireToggle(toggleRetoBtn, retoBody);
   }
 
   init();

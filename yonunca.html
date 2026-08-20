@@ -29,17 +29,23 @@
   <div class="options-area">
     <div class="options-header">
       <span>Frases "Yo nunca..."</span>
-      <button class="btn-small" id="resetBtn">Restaurar</button>
+      <button class="btn-small" id="toggleListBtn">Ver / editar &#9662;</button>
     </div>
 
-    <ul class="options-list" id="optionsList"></ul>
+    <div class="options-body hidden" id="optionsBody">
+      <div class="options-body-actions">
+        <button class="btn-small" id="resetBtn">Restaurar</button>
+      </div>
 
-    <div class="add-row">
-      <input type="text" id="newOption" maxlength="70" placeholder="Yo nunca...">
-      <button class="btn btn-secondary add-btn" id="addBtn">Agregar</button>
+      <ul class="options-list" id="optionsList"></ul>
+
+      <div class="add-row">
+        <input type="text" id="newOption" maxlength="70" placeholder="Yo nunca...">
+        <button class="btn btn-secondary add-btn" id="addBtn">Agregar</button>
+      </div>
+
+      <div class="hint" id="hintMsg"></div>
     </div>
-
-    <div class="hint" id="hintMsg"></div>
   </div>
 
 </div>

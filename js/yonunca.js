@@ -33,6 +33,8 @@
   var addBtn = document.getElementById('addBtn');
   var resetBtn = document.getElementById('resetBtn');
   var hintMsg = document.getElementById('hintMsg');
+  var toggleListBtn = document.getElementById('toggleListBtn');
+  var optionsBody = document.getElementById('optionsBody');
 
   function loadOptions() {
     var saved = null;
@@ -179,6 +181,17 @@
     nextBtn.addEventListener('click', onNextClick);
     addBtn.addEventListener('click', onAddClick);
     resetBtn.addEventListener('click', onResetClick);
+
+    toggleListBtn.addEventListener('click', function () {
+      var isHidden = optionsBody.className.indexOf('hidden') !== -1;
+      if (isHidden) {
+        optionsBody.className = 'options-body';
+        toggleListBtn.innerHTML = 'Ocultar &#9652;';
+      } else {
+        optionsBody.className = 'options-body hidden';
+        toggleListBtn.innerHTML = 'Ver / editar &#9662;';
+      }
+    });
 
     newOptionInput.addEventListener('keydown', function (e) {
       if (e.keyCode === 13) {

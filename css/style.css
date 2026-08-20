@@ -394,6 +394,15 @@ input {
   margin-right: 6px;
 }
 
+.options-body.hidden {
+  display: none;
+}
+
+.options-body-actions {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
 .footer-note {
   text-align: center;
   color: #6b4a8f;

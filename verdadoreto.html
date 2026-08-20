@@ -37,24 +37,34 @@
   <div class="options-area">
     <div class="options-header">
       <span>Preguntas de Verdad</span>
-      <button class="btn-small" id="resetVerdadBtn">Restaurar</button>
+      <button class="btn-small" id="toggleVerdadBtn">Ver / editar &#9662;</button>
     </div>
-    <ul class="options-list" id="verdadList"></ul>
-    <div class="add-row">
-      <input type="text" id="newVerdad" maxlength="80" placeholder="Nueva pregunta de verdad...">
-      <button class="btn btn-secondary add-btn" id="addVerdadBtn">Agregar</button>
+    <div class="options-body hidden" id="verdadBody">
+      <div class="options-body-actions">
+        <button class="btn-small" id="resetVerdadBtn">Restaurar</button>
+      </div>
+      <ul class="options-list" id="verdadList"></ul>
+      <div class="add-row">
+        <input type="text" id="newVerdad" maxlength="80" placeholder="Nueva pregunta de verdad...">
+        <button class="btn btn-secondary add-btn" id="addVerdadBtn">Agregar</button>
+      </div>
     </div>
   </div>
 
   <div class="options-area">
     <div class="options-header">
       <span>Retos</span>
-      <button class="btn-small" id="resetRetoBtn">Restaurar</button>
+      <button class="btn-small" id="toggleRetoBtn">Ver / editar &#9662;</button>
     </div>
-    <ul class="options-list" id="retoList"></ul>
-    <div class="add-row">
-      <input type="text" id="newReto" maxlength="80" placeholder="Nuevo reto...">
-      <button class="btn btn-secondary add-btn" id="addRetoBtn">Agregar</button>
+    <div class="options-body hidden" id="retoBody">
+      <div class="options-body-actions">
+        <button class="btn-small" id="resetRetoBtn">Restaurar</button>
+      </div>
+      <ul class="options-list" id="retoList"></ul>
+      <div class="add-row">
+        <input type="text" id="newReto" maxlength="80" placeholder="Nuevo reto...">
+        <button class="btn btn-secondary add-btn" id="addRetoBtn">Agregar</button>
+      </div>
     </div>
   </div>
 

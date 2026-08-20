@@ -31,6 +31,8 @@
   var bankList = document.getElementById('bankList');
   var addQuestionBtn = document.getElementById('addQuestionBtn');
   var resetBtn = document.getElementById('resetBtn');
+  var toggleListBtn = document.getElementById('toggleListBtn');
+  var optionsBody = document.getElementById('optionsBody');
 
   var editOverlay = document.getElementById('editOverlay');
   var editTitle = document.getElementById('editTitle');
@@ -310,6 +312,17 @@
     resetBtn.addEventListener('click', onResetClick);
     cancelEditBtn.addEventListener('click', closeEditForm);
     saveEditBtn.addEventListener('click', onSaveEdit);
+
+    toggleListBtn.addEventListener('click', function () {
+      var isHidden = optionsBody.className.indexOf('hidden') !== -1;
+      if (isHidden) {
+        optionsBody.className = 'options-body';
+        toggleListBtn.innerHTML = 'Ocultar &#9652;';
+      } else {
+        optionsBody.className = 'options-body hidden';
+        toggleListBtn.innerHTML = 'Ver / editar &#9662;';
+      }
+    });
 
     var pills = correctPicker.querySelectorAll('.pill');
     for (var i = 0; i < pills.length; i++) {
