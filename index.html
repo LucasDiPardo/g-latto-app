@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>G-LATTO - Juegos</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="wrap">
+
+  <div class="top-header">
+    <img class="logo" src="assets/glatto-logo.png" alt="G-Latto">
+    <div class="subtitle">Elegi un juego</div>
+  </div>
+
+  <div class="game-list" id="gameList">
+
+    <a class="game-card" href="ruleta.html">
+      <span class="icon">&#127920;</span>
+      <span class="name">Ruleta</span>
+      <div class="desc">Gira y descubri el reto o trago</div>
+    </a>
+
+    <a class="game-card" href="preguntas.html">
+      <span class="icon">&#10067;</span>
+      <span class="name">Preguntas</span>
+      <div class="desc">Trivia con opciones</div>
+    </a>
+
+    <a class="game-card" href="yonunca.html">
+      <span class="icon">&#128064;</span>
+      <span class="name">Yo Nunca</span>
+      <div class="desc">El que hizo, toma</div>
+    </a>
+
+    <a class="game-card" href="verdadoreto.html">
+      <span class="icon">&#128142;</span>
+      <span class="name">Verdad o Reto</span>
+      <div class="desc">Tarjetas al azar</div>
+    </a>
+
+    <a class="game-card" href="dado.html">
+      <span class="icon">&#127922;</span>
+      <span class="name">Dado del Trago</span>
+      <div class="desc">Cada numero, un reto</div>
+    </a>
+
+  </div>
+
+  <div class="footer-note">G-LATTO &bull; jugar con responsabilidad</div>
+
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="js/common.js"></script>
+<script>
+  (function () {
+    var cards = document.querySelectorAll('.game-card.disabled');
+    for (var i = 0; i < cards.length; i++) {
+      cards[i].addEventListener('click', function (e) {
+        e.preventDefault();
+        var name = this.getAttribute('data-game');
+        showToast(name + ': muy pronto');
+      });
+    }
+  })();
+</script>
+
+</body>
+</html>

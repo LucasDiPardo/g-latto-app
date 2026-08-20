@@ -1,0 +1,137 @@
+/* estilos especificos de la pantalla de preguntas */
+
+.quiz-area {
+  padding: 6px 10px 4px 10px;
+}
+
+.question-card {
+  max-width: 560px;
+  margin: 0 auto;
+  background-color: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 20px;
+  padding: 26px 22px;
+}
+
+.question-counter {
+  text-align: center;
+  color: #ffd23f;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.question-text {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.3;
+  margin-bottom: 22px;
+  min-height: 62px;
+}
+
+.options-grid {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.option-btn {
+  width: 47%;
+  margin: 1.5%;
+  padding: 16px 10px;
+  border-radius: 12px;
+  border: 2px solid #7b1fa2;
+  background-color: #3a0f66;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  word-break: break-word;
+  -webkit-transition: -webkit-transform 0.1s ease-out, background-color 0.15s;
+  transition: transform 0.1s ease-out, background-color 0.15s;
+}
+
+.option-btn:active {
+  -webkit-transform: scale(0.97);
+  transform: scale(0.97);
+}
+
+.option-btn.selected {
+  background-color: #ab1fd6;
+  border-color: #d05ffb;
+}
+
+.option-btn.correct {
+  background-color: #2e7d32;
+  border-color: #66bb6a;
+}
+
+.option-btn.wrong {
+  background-color: #8e2323;
+  border-color: #d16a6a;
+}
+
+.option-btn.locked {
+  pointer-events: none;
+}
+
+.quiz-actions {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.quiz-actions .btn {
+  margin: 6px;
+}
+
+.full-btn {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.correct-label {
+  font-size: 12px;
+  color: #d9b3ff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 6px 0 8px 0;
+}
+
+.correct-picker {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  margin-bottom: 18px;
+}
+
+.correct-picker .pill {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid #7b1fa2;
+  background-color: rgba(255,255,255,0.06);
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.correct-picker .pill.active {
+  background-color: #ffd23f;
+  border-color: #ffd23f;
+  color: #3a0f66;
+}
+

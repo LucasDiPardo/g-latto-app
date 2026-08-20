@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>G-LATTO - Verdad o Reto</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/verdadoreto.css">
+</head>
+<body>
+
+<div class="back-bar">
+  <a class="back-link" href="index.html">&larr; Menu</a>
+  <img class="mini-logo" src="assets/glatto-logo.png" alt="G-Latto">
+</div>
+
+<div class="wrap">
+
+  <div class="vor-area">
+
+    <div class="choice-row" id="choiceRow">
+      <button class="btn vor-choice-btn vor-verdad" id="verdadBtn">Verdad</button>
+      <button class="btn vor-choice-btn vor-reto" id="retoBtn">Reto</button>
+    </div>
+
+    <div class="question-card" id="cardArea" style="display:none;">
+      <div class="question-counter" id="cardCounter">Verdad</div>
+      <div class="question-text" id="cardText">-</div>
+      <div class="quiz-actions">
+        <button class="btn btn-secondary" id="backBtn">Volver</button>
+        <button class="btn btn-gold" id="nextCardBtn">Otra</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="options-area">
+    <div class="options-header">
+      <span>Preguntas de Verdad</span>
+      <button class="btn-small" id="resetVerdadBtn">Restaurar</button>
+    </div>
+    <ul class="options-list" id="verdadList"></ul>
+    <div class="add-row">
+      <input type="text" id="newVerdad" maxlength="80" placeholder="Nueva pregunta de verdad...">
+      <button class="btn btn-secondary add-btn" id="addVerdadBtn">Agregar</button>
+    </div>
+  </div>
+
+  <div class="options-area">
+    <div class="options-header">
+      <span>Retos</span>
+      <button class="btn-small" id="resetRetoBtn">Restaurar</button>
+    </div>
+    <ul class="options-list" id="retoList"></ul>
+    <div class="add-row">
+      <input type="text" id="newReto" maxlength="80" placeholder="Nuevo reto...">
+      <button class="btn btn-secondary add-btn" id="addRetoBtn">Agregar</button>
+    </div>
+  </div>
+
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="js/common.js"></script>
+<script src="js/verdadoreto.js"></script>
+</body>
+</html>

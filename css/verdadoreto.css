@@ -1,0 +1,34 @@
+/* estilos especificos de la pantalla Verdad o Reto */
+
+.vor-area {
+  padding: 20px 10px 4px 10px;
+}
+
+.choice-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.vor-choice-btn {
+  font-size: 24px;
+  padding: 30px 50px;
+  margin: 10px;
+  min-width: 180px;
+}
+
+.vor-verdad {
+  background-color: #2f6fb0;
+}
+
+.vor-reto {
+  background-color: #ab1fd6;
+}
+
+.question-card #cardText {
+  font-size: 24px;
+}

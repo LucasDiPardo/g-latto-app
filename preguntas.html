@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>G-LATTO - Preguntas</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/preguntas.css">
+</head>
+<body>
+
+<div class="back-bar">
+  <a class="back-link" href="index.html">&larr; Menu</a>
+  <img class="mini-logo" src="assets/glatto-logo.png" alt="G-Latto">
+</div>
+
+<div class="wrap">
+
+  <div class="quiz-area">
+    <div class="question-card" id="questionCard">
+      <div class="question-counter" id="questionCounter">Pregunta</div>
+      <div class="question-text" id="questionText">Agrega preguntas para empezar</div>
+      <div class="options-grid" id="optionsGrid"></div>
+      <div class="quiz-actions">
+        <button class="btn btn-secondary" id="revealBtn">Revelar respuesta</button>
+        <button class="btn btn-gold" id="nextBtn">Siguiente pregunta</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="options-area">
+    <div class="options-header">
+      <span>Banco de preguntas</span>
+      <button class="btn-small" id="resetBtn">Restaurar</button>
+    </div>
+
+    <ul class="options-list" id="bankList"></ul>
+
+    <button class="btn btn-secondary full-btn" id="addQuestionBtn">+ Agregar pregunta</button>
+
+  </div>
+
+</div>
+
+<div class="result-overlay" id="editOverlay">
+  <div class="result-card edit-card">
+    <div class="result-label" id="editTitle">Nueva pregunta</div>
+
+    <input type="text" id="editQuestionText" class="edit-input" maxlength="90" placeholder="Escribi la pregunta...">
+    <input type="text" id="editOpt0" class="edit-input" maxlength="40" placeholder="Opcion 1">
+    <input type="text" id="editOpt1" class="edit-input" maxlength="40" placeholder="Opcion 2">
+    <input type="text" id="editOpt2" class="edit-input" maxlength="40" placeholder="Opcion 3 (opcional)">
+    <input type="text" id="editOpt3" class="edit-input" maxlength="40" placeholder="Opcion 4 (opcional)">
+
+    <div class="correct-label">Cual es la correcta?</div>
+    <div class="correct-picker" id="correctPicker">
+      <button class="pill" data-index="0">1</button>
+      <button class="pill" data-index="1">2</button>
+      <button class="pill" data-index="2">3</button>
+      <button class="pill" data-index="3">4</button>
+    </div>
+
+    <div class="edit-actions">
+      <button class="btn btn-secondary" id="cancelEditBtn">Cancelar</button>
+      <button class="btn btn-gold" id="saveEditBtn">Guardar</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="js/common.js"></script>
+<script src="js/preguntas.js"></script>
+</body>
+</html>

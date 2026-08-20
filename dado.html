@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>G-LATTO - Dado del Trago</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/dado.css">
+</head>
+<body>
+
+<div class="back-bar">
+  <a class="back-link" href="index.html">&larr; Menu</a>
+  <img class="mini-logo" src="assets/glatto-logo.png" alt="G-Latto">
+</div>
+
+<div class="wrap">
+
+  <div class="dice-area">
+    <canvas id="diceCanvas" width="220" height="220"></canvas>
+    <button class="btn btn-gold roll-btn" id="rollBtn">Tirar dado</button>
+    <div class="dice-rule" id="diceRule">Toca "Tirar dado" para empezar</div>
+  </div>
+
+  <div class="options-area">
+    <div class="options-header">
+      <span>Reglas del dado</span>
+    </div>
+
+    <ul class="options-list" id="rulesList"></ul>
+  </div>
+
+</div>
+
+<div class="result-overlay" id="editOverlay">
+  <div class="result-card edit-card">
+    <div class="result-label" id="editTitle">Editar regla</div>
+    <input type="text" id="editRuleText" class="edit-input" maxlength="60" placeholder="Regla para este numero...">
+    <div class="edit-actions">
+      <button class="btn btn-secondary" id="cancelEditBtn">Cancelar</button>
+      <button class="btn btn-gold" id="saveEditBtn">Guardar</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="js/common.js"></script>
+<script src="js/dado.js"></script>
+</body>
+</html>

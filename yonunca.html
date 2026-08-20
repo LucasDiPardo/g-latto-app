@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>G-LATTO - Yo Nunca</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/yonunca.css">
+</head>
+<body>
+
+<div class="back-bar">
+  <a class="back-link" href="index.html">&larr; Menu</a>
+  <img class="mini-logo" src="assets/glatto-logo.png" alt="G-Latto">
+</div>
+
+<div class="wrap">
+
+  <div class="quiz-area">
+    <div class="question-card">
+      <div class="question-counter" id="counter">Frase</div>
+      <div class="question-text yn-text" id="phraseText">Agrega frases para empezar</div>
+      <div class="quiz-actions">
+        <button class="btn btn-gold" id="nextBtn">Siguiente</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="options-area">
+    <div class="options-header">
+      <span>Frases "Yo nunca..."</span>
+      <button class="btn-small" id="resetBtn">Restaurar</button>
+    </div>
+
+    <ul class="options-list" id="optionsList"></ul>
+
+    <div class="add-row">
+      <input type="text" id="newOption" maxlength="70" placeholder="Yo nunca...">
+      <button class="btn btn-secondary add-btn" id="addBtn">Agregar</button>
+    </div>
+
+    <div class="hint" id="hintMsg"></div>
+  </div>
+
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="js/common.js"></script>
+<script src="js/yonunca.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+/* estilos especificos de la pantalla de dado */
+
+.dice-area {
+  text-align: center;
+  padding: 20px 10px 10px 10px;
+}
+
+#diceCanvas {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 20px auto;
+  display: block;
+}
+
+.roll-btn {
+  font-size: 20px;
+  padding: 16px 40px;
+}
+
+.dice-rule {
+  max-width: 480px;
+  margin: 22px auto 30px auto;
+  font-size: 22px;
+  font-weight: bold;
+  min-height: 34px;
+  padding: 0 10px;
+}
+
+.options-list li .rule-number {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #ab1fd6;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 26px;
+  margin-right: 10px;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+}

@@ -1,0 +1,10 @@
+/* estilos especificos de la pantalla Yo Nunca */
+
+.yn-text {
+  font-size: 26px;
+}
+
+#nextBtn {
+  font-size: 20px;
+  padding: 16px 40px;
+}

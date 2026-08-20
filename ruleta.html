@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>G-LATTO - Ruleta</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/ruleta.css">
+</head>
+<body>
+
+<div class="back-bar">
+  <a class="back-link" href="index.html">&larr; Menu</a>
+  <img class="mini-logo" src="assets/glatto-logo.png" alt="G-Latto">
+</div>
+
+<div class="wrap">
+
+  <div class="ruleta-area">
+
+    <div class="wheel-holder">
+      <div class="pointer"></div>
+      <div class="wheel-spin" id="wheelSpin">
+        <canvas id="wheelCanvas" width="560" height="560"></canvas>
+      </div>
+    </div>
+
+    <button class="btn btn-gold spin-btn" id="spinBtn">Girar</button>
+
+  </div>
+
+  <div class="options-area">
+
+    <div class="options-header">
+      <span>Opciones de la ruleta</span>
+      <button class="btn-small" id="resetBtn">Restaurar</button>
+    </div>
+
+    <ul class="options-list" id="optionsList"></ul>
+
+    <div class="add-row">
+      <input type="text" id="newOption" maxlength="28" placeholder="Nueva opcion...">
+      <button class="btn btn-secondary add-btn" id="addBtn">Agregar</button>
+    </div>
+
+    <div class="hint" id="hintMsg"></div>
+
+  </div>
+
+</div>
+
+<div class="result-overlay" id="resultOverlay">
+  <div class="result-card">
+    <div class="result-label">Salio</div>
+    <div class="result-text" id="resultText">-</div>
+    <button class="btn btn-gold" id="closeResult">Listo</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="js/common.js"></script>
+<script src="js/ruleta.js"></script>
+</body>
+</html>
